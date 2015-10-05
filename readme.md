@@ -2,7 +2,7 @@
 
 [If you thought SMS was old fashioned, think again] (https://www.sinch.com/opinion/sms-data/). 96% of smartphone users still use SMS. It has a 90% read rate in minutes and higher engagement rates than emails and OTT apps, which makes it very reach effective in terms of timeliness. SMS is the one solution, not requiring app installations or friend requests, not relying on tech heavy solutions or the operator at hand.
 
-Nuff said about the good old short message service for now. In this tutorial we’ll be creating an application send an SMS. We’ll be using the sandbox environment, and in the sandbox, you can only send messages to verified numbers on your account.
+'Nuff said about the good old short message service for now. In this tutorial we’ll be creating an application to send an SMS. We’ll be using the sandbox environment, and in the sandbox, you can only send messages to verified numbers on your account.
 
 ##Setup
 In [the dashboard] (https://www.sinch.com/dashboard/#/login), ensure you have a phone number on the Account page.  If not, click “Add a phone number”. 
@@ -57,8 +57,8 @@ using `Sinch.ServerSdk;`
 To send an SMS, we'll add the following to `MainAsync()`:
 
 ````csharp
-var smsApi = SinchFactory.CreateApiFactory("00000000-0000-0000-0000-000000000000", "AAAAAAAAAAAAAAAAAAAAAA==").CreateSmsApi();
-var sendSmsResponse = await smsApi.Sms("+61491570156", "Hello world.  Sinch SMS here.").Send();
+var smsApi = SinchFactory.CreateApiFactory("yourkey", "yoursecret").CreateSmsApi();`
+`var sendSmsResponse = await smsApi.Sms("+61491570156", "Hello world.  Sinch SMS here.").Send();
 ````
 
 Remember to replace the application key and secret with your own, and change the phone number and message accordingly. It might be worth setting up a unique long number or an [SMS short code](https://www.sinch.com/products/sms-api/sms-short-code/).
