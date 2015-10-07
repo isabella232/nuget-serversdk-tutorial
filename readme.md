@@ -11,7 +11,7 @@ In [the dashboard] (https://www.sinch.com/dashboard/#/login), ensure you have a 
 
 Enter your number and submit the PIN code you will receive in the verification SMS.
 
-![verify number](img/verify.png)
+![verify number](img/verify-number.png)
 
 You'll now have the number attached to your Sinch account, and will also have been credited $2 as a bonus for verifying your number!
 
