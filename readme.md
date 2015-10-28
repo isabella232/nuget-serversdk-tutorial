@@ -110,3 +110,7 @@ namespace Sinch.SendSms.Example
     }
 }
 ````
+
+##Next Steps
+
+That's sending an SMS with Sinch and our .NET server nugget. Next up we have a tutorial on [recieving SMS in C# and .NET](https://www.sinch.com/tutorials/recieving-sms-c/) from a similar backend setup. 
