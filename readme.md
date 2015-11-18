@@ -57,8 +57,8 @@ using `Sinch.ServerSdk;`
 To send an SMS, we'll add the following to `MainAsync()`:
 
 ````csharp
-var smsApi = SinchFactory.CreateApiFactory("yourkey", "yoursecret").CreateSmsApi();`
-`var sendSmsResponse = await smsApi.Sms("+61491570156", "Hello world.  Sinch SMS here.").Send();
+var smsApi = SinchFactory.CreateApiFactory("yourkey", "yoursecret").CreateSmsApi();
+var sendSmsResponse = await smsApi.Sms("+61491570156", "Hello world.  Sinch SMS here.").Send();
 ````
 
 Remember to replace the application key and secret with your own, and change the phone number and message accordingly. It might be worth setting up a unique long number or an [SMS short code](https://www.sinch.com/products/sms-api/sms-short-code/).
